@@ -1,0 +1,8 @@
+#root {
+  max-width: 360px;
+  margin: 0 auto;
+  padding:0;
+  --main-color: #faf0e6;
+  --dark-beige:#BBAB8C;
+  --font:black;
+}

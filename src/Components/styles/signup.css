@@ -1,0 +1,59 @@
+.container{
+    display: flex;
+    background-color: var(--main-color);
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: 	#faf0e6;
+    
+}
+.Signupform{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--dark-beige);
+    padding: 2rem;
+    border-radius: 1rem;
+
+}
+
+.innerform{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+.classbtn{
+    background-color:var(--font);
+    color:var(--main-color);
+
+}
+.signinF{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: #966432;
+}
+.Signinform{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--dark-beige);
+    padding: 1rem;
+    border-radius: 1rem;
+
+}
+.fontSize{
+    font-size: smaller;
+}
+
+.classbtn:hover{
+    box-shadow: 2px 2px 10px var(--main-color);
+    background-color: black;
+    color: var(--main-color);
+}
+.custom:focus{
+    border-color: var(--main-color) 2px;
+}
