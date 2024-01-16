@@ -2,6 +2,7 @@
   max-width: 500px;
   margin: 0 auto;
   padding:0;
+  --background-image:url('AppBG.jpg');
   --main-color: #faf0e6;
   --dark-beige:#BBAB8C;
   --font:black;

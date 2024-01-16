@@ -15,11 +15,12 @@ const Signin = () => {
         password,
         email
       }
-      await auth.signIn(user)
-      navigate('/explore')
+      const res = await auth.signIn(user)
+      if( await res){navigate('/explore')}
+      else{ seterror('Invalid email or password:(')}
     
     }catch(err){
-      seterror('Invalid email or password, Please try again!')
+     
       console.log({LoginError:err})
     }
 
@@ -33,8 +34,9 @@ const Signin = () => {
     </div>
     <div className='Signinform'>
         <form action="submit" onSubmit={handleSubmit} className='innerform' >
-            <input className='form-control custom mb-2' type="text" placeholder='Email' required value={email} onChange={(e)=>setemail(e.target.value)}/>
+            <input className='form-control custom mb-2' type="email" placeholder='Email' required value={email} onChange={(e)=>setemail(e.target.value)}/>
             <input className='form-control custom ' type="password" placeholder='Password' required value={password} onChange={(e)=>setpassword(e.target.value)}/>
+            {error && <div className='text-danger'>{error}</div>}
             <Link to='/forgot' className='btn border-0 d-flex '>Forgot Password</Link>
             <button className='btn mt-2 classbtn'>Login</button>
         </form>
