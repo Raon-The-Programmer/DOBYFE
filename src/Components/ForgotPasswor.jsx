@@ -10,14 +10,13 @@ const ForgotPassword = () => {
   const navigate = useNavigate()
   const handleMail = async(e)=>{
     e.preventDefault()
-    if(await auth.forgotpassword({email})){
-    
+    try{
+      await auth.forgotpassword({email})
       navigate('/signin')
       setemail('')
+    }catch(err){
+      console.log("Error while sending mail: ",err)
     }
-    
-    
-  
   }
   return (
     <div className='container'>

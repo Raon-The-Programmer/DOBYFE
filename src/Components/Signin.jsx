@@ -5,17 +5,22 @@ import './styles/signup.css'
 
 const Signin = () => {
   const navigate = useNavigate()
-  const [email,setemail]= useState()
-  const [password,setpassword] = useState()
+  const [email,setemail]= useState('')
+  const [password,setpassword] = useState('')
+  const [error,seterror] = useState('')
   const handleSubmit=async(e)=>{
     e.preventDefault()
-    const user = {
-      password,
-      email
-    }
-    const res = await auth.signIn(user)
-    if(res){
+    try{
+      const user = {
+        password,
+        email
+      }
+      await auth.signIn(user)
       navigate('/explore')
+    
+    }catch(err){
+      seterror('Invalid email or password, Please try again!')
+      console.log({LoginError:err})
     }
 
   }
