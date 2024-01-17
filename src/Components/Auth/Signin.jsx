@@ -1,6 +1,6 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
-import auth from '../services/auth'
+import auth from '../../services/auth'
 import './styles/signup.css'
 
 const Signin = () => {
@@ -8,6 +8,7 @@ const Signin = () => {
   const [email,setemail]= useState('')
   const [password,setpassword] = useState('')
   const [error,seterror] = useState('')
+
   const handleSubmit=async(e)=>{
     e.preventDefault()
     try{

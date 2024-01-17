@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import './styles/signup.css'
-import auth from '../services/auth'
+import auth from '../../services/auth'
 
 
 

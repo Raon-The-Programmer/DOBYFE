@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
-import auth from '../services/auth';
+import auth from '../../services/auth';
 
 const ResetPassword = () => {
   const navigate = useNavigate();

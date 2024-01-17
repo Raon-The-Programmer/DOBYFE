@@ -1,9 +1,11 @@
 #root {
   max-width: 500px;
+  height: 100vh;
   margin: 0 auto;
   padding:0;
-  --background-image:url('AppBG.jpg');
+  --background-image:url('AppBG.png');
   --main-color: #faf0e6;
   --dark-beige:#BBAB8C;
   --font:black;
+  background-image: var(--background-image);
 }
