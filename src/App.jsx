@@ -5,7 +5,7 @@ import { BrowserRouter as Router,Routes,Route } from 'react-router-dom'
 import Signin from './Components/Auth/Signin'
 import Signup from './Components/Auth/Signup'
 import Home from './Components/Home'
-import Mainpage from './Components/Mainpage'
+import Mainpage from './Components/Content/Mainpage'
 import ForgotPassword from './Components/Auth/ForgotPasswor'
 import ResetPassword from './Components/Auth/ResetPassword'
 

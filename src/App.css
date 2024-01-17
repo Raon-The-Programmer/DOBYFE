@@ -1,11 +1,13 @@
 #root {
   max-width: 500px;
   height: 100vh;
+  width: 100wh;
   margin: 0 auto;
+  overflow-x: hidden;
   padding:0;
   --background-image:url('AppBG.png');
   --main-color: #faf0e6;
-  --dark-beige:#BBAB8C;
+  --dark-beige:#bbab8cb7;
   --font:black;
   background-image: var(--background-image);
 }
