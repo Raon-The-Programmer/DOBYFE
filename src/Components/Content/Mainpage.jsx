@@ -29,7 +29,7 @@ const Mainpage = () => {
       <div>
         <Services />
       </div>
-      <div>
+      <div className='container-fluid'>
         <Navbar />
       </div>
     </div>

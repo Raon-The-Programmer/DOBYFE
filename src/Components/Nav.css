@@ -1,22 +1,24 @@
+.navbar {
+  width: 100%;
+  border-top-left-radius: 1.5rem;  
+  border-top-right-radius: 1.5rem;
+  background-color: var(--dark-beige); 
+  backdrop-filter: blur(20px); /* Blur the background slightly */
+  box-shadow: 4px 4px 8px rgba(29, 6, 6, 0.1), -4px -4px 8px rgba(255, 255, 255, 0.5);
+}
 
 .navbar ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: stretch;
-    background: black;
-  }
-  
-  .navbar li {
-    margin: 0 10px;
-    cursor: pointer;
-    transition: transform 0.2s, color 0.2s;
-  }
-  
-  .navbar li.active {
-    transform: translateY(-5px);
-    color: #927a49; 
-  }
-  
-  
+  list-style: none;
+  padding: 0;
+}
+
+.navbar li {
+  cursor: pointer;
+  color: white;
+  transition: transform 0.2s, color 0.2s;
+}
+
+.navbar li.active {
+  transform: translateY(-15px);
+  color: #927a49;
+}

@@ -8,6 +8,9 @@ import Home from './Components/Home'
 import Mainpage from './Components/Content/Mainpage'
 import ForgotPassword from './Components/Auth/ForgotPasswor'
 import ResetPassword from './Components/Auth/ResetPassword'
+import Location from './Components/Locations/Location'
+import Profile from './Components/Profile/Profile'
+import Basket from './Components/Basket/Basket'
 
 function App() {
 
@@ -22,6 +25,9 @@ function App() {
         <Route path='/explore' element={<Mainpage/>}/>
         <Route path='/forgot' element={<ForgotPassword/>}/>
         <Route path='/resetpassword/:id/:token' element={<ResetPassword/>}/>
+        <Route path='/location' element={<Location/>}/>
+        <Route path='/profile' element={<Profile/>}/>
+        <Route path='/basket' element={<Basket/>}/>
       </Routes>
    
    </Router>

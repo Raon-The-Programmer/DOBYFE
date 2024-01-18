@@ -49,8 +49,13 @@
     background-color: var(--dark-beige);
     padding: 1rem;
     border-radius: 1rem;
-
+    box-shadow:10px 10px 20px #d1d1d1, -10px -10px 20px #ffffff ;
+    transition: box-shadow 0.3s ease;
 }
+.Signinform:hover {
+    box-shadow: 5px 5px 10px #d1d1d1, -5px -5px 10px #ffffff;
+  }
+
 .fontSize{
     font-size: smaller;
 }
