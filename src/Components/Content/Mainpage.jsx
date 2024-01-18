@@ -5,11 +5,12 @@ import { IoLogoGoogle } from "react-icons/io";
 import Offers from './Offers';
 import Services from './Services';
 import Navbar from '../Navbar';
+import './mainpage.css'
 
 const Mainpage = () => {
 
   return (
-    <div >
+    <div className='main'>
       <div className='d-flex p-3 justify-content-between align-items-center'>
         <div className='d-flex'>
           <IoLogoGoogle size={30} className='mx-2' />

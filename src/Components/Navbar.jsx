@@ -13,7 +13,8 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="navbar">
+    
+    <div className="navbar">
       <ul>
         <li className={selectedTab === 'home' ? 'active' : ''} onClick={() => handleTabClick('home')}>
         <IoHome size={35} />
@@ -28,7 +29,7 @@ const Navbar = () => {
         <RiAccountPinCircleFill size={35}/>
         </li>
       </ul>
-    </nav>
+   </div>
   );
 }
 

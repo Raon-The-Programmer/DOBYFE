@@ -1,10 +1,11 @@
+
 .navbar ul {
     list-style: none;
     padding: 0;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 2px black;
+    justify-content: space-between;
+    align-items: stretch;
+    background: black;
   }
   
   .navbar li {
@@ -15,6 +16,7 @@
   
   .navbar li.active {
     transform: translateY(-5px);
-    color: #927a49; /* Change this to your desired color */
+    color: #927a49; 
   }
+  
   
