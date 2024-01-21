@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
-import Navbar from '../Navbar';
-import { IoLogoGoogle } from 'react-icons/io5';
-import Select from 'react-dropdown-select';
-import Shops from './Area'
+import React, { useState } from 'react'
+import Navbar from '../Navbar'
+import { IoLogoGoogle } from 'react-icons/io5'
+import Select from "react-dropdown-select";
+import Shops from './Shops';
 
 const Location = () => {
   const areas = [
@@ -24,34 +24,35 @@ const Location = () => {
     },
     {
       value:5,
-      label:"Adayar"}
-    ];
-
+      label:"Adayar"
+    }
+  ];
   const [selectedLabel, setSelectedLabel] = useState(null);
 
   const handleChange = (value) => {
     setSelectedLabel(value[0]?.label || null);
+    
   }
   
   return (
     <div>
-      <div className='d-flex p-3 justify-content-between align-items-center'>
+        <div className='d-flex p-3 justify-content-between align-items-center'>
         <div className='d-flex'>
           <IoLogoGoogle size={30} className='mx-2' />
           <h3 className='text-6'><strong>Dobby</strong></h3>
         </div>
-        <div className='w-5'>
-          <Select options={areas} onChange={handleChange} />
+        <div>
+        <Select options={areas} style={{width:'10rem',background:'#bbab8cb7',options:'red'}} placeholder='Area' onChange={handleChange} />
         </div>
-      </div>
-      <div>
-        {selectedLabel && <Shops area={selectedLabel} />}
-      </div>
-      <div>
-        <Navbar />
-      </div>
+        </div>
+        <div>
+          <Shops area = {selectedLabel}/>
+        </div>
+        <div>
+            <Navbar/>
+        </div>
     </div>
   )
 }
 
-export default Location;
+export default Location
