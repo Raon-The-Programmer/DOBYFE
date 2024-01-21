@@ -2,9 +2,11 @@ import React, { useEffect, useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import auth from '../../services/auth'
 import './styles/signup.css'
+import { useDispatch } from 'react-redux'
 
 const Signin = () => {
   const navigate = useNavigate()
+  const dispatch = useDispatch()
   const [email,setemail]= useState('')
   const [password,setpassword] = useState('')
   const [error,seterror] = useState('')
@@ -17,8 +19,13 @@ const Signin = () => {
         email
       }
       const res = await auth.signIn(user)
-      if( await res){navigate('/explore')}
+      if( await res){
+        dispatch({type: 'SIGNIN_SUCCESS', payload: user})
+        navigate('/explore')
+      }
       else{ seterror('Invalid email or password:(')}
+      setemail('')
+      setpassword('')
     
     }catch(err){
      
