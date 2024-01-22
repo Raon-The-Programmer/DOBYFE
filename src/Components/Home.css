@@ -1,0 +1,9 @@
+.loader{
+    height: 100vh;
+    background-image: none;
+    background:linear-gradient(45deg,#FDF7E4,#FAEED1 ,#DED0B6,#BBAB8C,#938568);
+}  
+ 
+.triangle{
+    stroke-width: 20px;
+}

@@ -26,6 +26,7 @@ const Signup = () => {
     }
   return (
     <div className='container'>
+        {}
         <div><strong>Dobby{'>'}</strong></div>
         <div className='d-flex flex-column align-items-center'>
             <h3><strong>Create your account</strong></h3>
