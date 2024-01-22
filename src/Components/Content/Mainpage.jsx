@@ -39,7 +39,7 @@ const ref = useRef()
           top: 0,
           left: 0,
           right: 0,
-          bottom: '18rem',
+          bottom: '13rem',
           margin: 'auto',
           zIndex: 1,
         }}
