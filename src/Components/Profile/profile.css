@@ -1,4 +1,44 @@
 .profile{
     background-color: var(--dark-beige);
     padding-bottom: 1rem;
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    box-shadow:5px 10px 30px var(--dark-beige)
 }
+
+/* .Updateform{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--dark-beige);
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow:10px 10px 20px #d1d1d1, -10px -10px 20px #ffffff ;
+    transition: box-shadow 0.3s ease;
+}
+.Updateform:hover {
+    box-shadow: 5px 5px 10px #979696, -5px -5px 10px #ffffff;
+  } */
+.Updateform{
+    width: 80%;
+    position: absolute;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    background-color: var(--dark-beige);
+    box-shadow:10px 10px 20px #d1d1d1, -10px -10px 20px #ffffff ;
+    transition: box-shadow 0.3s ease;
+}
+.Updateform:hover {
+    box-shadow: 5px 5px 30px  #ccac86, -5px -5px 10px #ffffff;
+  }
+.input{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+ 

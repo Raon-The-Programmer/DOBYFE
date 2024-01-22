@@ -58,10 +58,10 @@ const forgotpassword = async({email})=>{
   const getProfile= async (dispatch)=>{
     try{
         const res = await protectedInstance.get('/user/profile')
-        console.log(res)
+        //console.log(res)
         if (res.status === 200) {
-            console.log('Profile fetched successfully!');
-            console.log(res.data);
+            //console.log('Profile fetched successfully!');
+            //console.log(res.data);
             await dispatch({ type: 'USER_PROFILE', payload: res.data });
             return res.data
         }
