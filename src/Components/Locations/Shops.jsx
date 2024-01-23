@@ -1,58 +1,74 @@
-import React from 'react'
+import React from 'react';
+import './shop.css'
 
-const Shops = ({area}) => {
-    const shopData = {
-        Tambaram: [
-          { name: 'Shop 1', image: 'url_to_shop1_image' },
-          { name: 'Shop 2', image: 'url_to_shop2_image' },
-          { name: 'Shop 3', image: 'url_to_shop3_image' },
-        ],
-        Perungudi: [
-          { name: 'Shop 4', image: 'url_to_shop4_image' },
-          { name: 'Shop 5', image: 'url_to_shop5_image' },
-          { name: 'Shop 6', image: 'url_to_shop6_image' },
-        ],
-        Nungambakkam: [
-          { name: 'Shop 7', image: 'url_to_shop7_image' },
-          { name: 'Shop 8', image: 'url_to_shop8_image' },
-          { name: 'Shop 9', image: 'url_to_shop9_image' },
-        ],
-        Taramani: [
-          { name: 'Shop 10', image: 'url_to_shop10_image' },
-          { name: 'Shop 11', image: 'url_to_shop11_image' },
-          { name: 'Shop 12', image: 'url_to_shop12_image' },
-        ],
-        Adayar: [
-          { name: 'Shop 13', image: 'url_to_shop13_image' },
-          { name: 'Shop 14', image: 'url_to_shop14_image' },
-          { name: 'Shop 15', image: 'url_to_shop15_image' },
-        ],
-      };
-      const shops = shopData[area] || []
-      
+const Shops = ({ area }) => {
+  const shopData = {
+    Tambaram: [
+      { name: 'Quality Power', image: '/pictures/laundry1.jpeg' },
+      { name: 'Laundr O Room', image: '/pictures/laundry2.jpeg' },
+      { name: 'Laudy Wash', image: '/pictures/laundry3.jpeg' },
+      { name: 'Smart Laundry', image: '/pictures/laundry4.jpeg' },
+      { name: 'Thee Washers', image: '/pictures/laundry5.jpeg' },
+    ],
+    Perungudi: [
+      { name: 'Dry Clean House', image: '/pictures/laundry6.jpeg' },
+      { name: 'Best Power Laundry', image: '/pictures/laundry7.jpeg' },
+      { name: 'Tumbledry', image: '/pictures/laundry8.jpeg' },
+      { name: 'Wash Dry', image: '/pictures/laundry9.jpeg' },
+      { name: 'hiten', image: '/pictures/laundry10.jpeg' },
+    ],
+    Nungambakkam: [
+      { name: 'White Wagon', image: '/pictures/laundry11.jpeg' },
+      { name: 'Laundrex', image: '/pictures/laundry12.jpeg' },
+      { name: 'Prime Laundry', image: '/pictures/laundry13.jpeg' },
+      { name: 'Western & Modern Laundry', image: '/pictures/laundry14.jpeg' },
+      { name: 'Wash Overs', image: '/pictures/laundry15.jpeg' },
+      { name: 'Smart Laundry', image: '/pictures/laundry4.jpeg' },
+      { name: 'Thee Washers', image: '/pictures/laundry5.jpeg' },
+    ],
+    Taramani: [
+      { name: 'Laundry & Dry Cleaning', image: '/pictures/laundry16.jpeg' },
+      { name: 'Laundrex', image: '/pictures/laundry17.jpeg' },
+      { name: 'hiten', image: '/pictures/laundry18.jpeg' },
+      { name: 'Quality Power Laundry', image: '/pictures/laundry1.jpeg' },
+      { name: 'Laundr O Room', image: '/pictures/laundry2.jpeg' },
+    ],
+    Adayar: [
+      { name: 'Laudy Wash', image: '/pictures/laundry3.jpeg' },
+      { name: 'Smart Laundry', image: '/pictures/laundry4.jpeg' },
+      { name: 'Thee Washers', image: '/pictures/laundry5.jpeg' },
+      { name: 'Dry Clean House', image: '/pictures/laundry6.jpeg' },
+      { name: 'Power Laundry', image: '/pictures/laundry7.jpeg' },
+      { name: 'Laundry & Dry Cleaning', image: '/pictures/laundry16.jpeg' },
+      { name: 'Laundrex', image: '/pictures/laundry17.jpeg' },
+      { name: 'hiten', image: '/pictures/laundry18.jpeg' },
+    ],
+  };
+  const shops = shopData[area] || [];
+
   return (
-    <div className='container'>
-        {area ? (
+    <div className='mt-3 mx-2 body'>
+      {area ? (
         <div>
-          <h2>Shops in {area}</h2>
-          <ul>
+          <h2 className='mb-3'>Shops in {area}</h2>
+          <div className="grid-container">
             {shops.map((shop, index) => (
-              <li key={index}>
+              <div key={index} className="grid-item">
                 <img
                   src={shop.image}
                   alt={shop.name}
-                  style={{ maxWidth: '100px', maxHeight: '100px' }}
+                  style={{ minWidth: '100px', maxHeight: '100px' }}
                 />
-                {shop.name}
-              </li>
+                <p>{shop.name}</p>
+              </div>
             ))}
-          </ul>
+          </div>
         </div>
       ) : (
         <h1>Select an area</h1>
       )}
     </div>
-  )
-}
+  );
+};
 
-export default Shops
+export default Shops;

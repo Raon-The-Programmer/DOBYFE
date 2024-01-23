@@ -1,8 +1,11 @@
 import React from 'react'
+import './mainpage.css'
 
 const Animation = () => {
   return (
-    <div>Animation</div>
+    <div className='d-flex justify-content-center'>
+        <div className='animation'></div>
+    </div>
   )
 }
 

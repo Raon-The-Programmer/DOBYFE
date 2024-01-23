@@ -38,15 +38,12 @@ const Location = () => {
     <div>
         <div className='d-flex p-3 justify-content-between align-items-center'>
         <div className='d-flex'>
-          <IoLogoGoogle size={30} className='mx-2' />
-          <h3 className='text-6'><strong>Dobby</strong></h3>
+         
+          <h3 className='text-6'><strong>Dobby{'>'}</strong></h3>
         </div>
         <div>
-        <Select options={areas} style={{width:'10rem',background:'#bbab8cb7',options:'red'}} placeholder='Area' onChange={handleChange} />
+        <Select className='rounded-2 ' options={areas} style={{width:'10rem',background:'#bbab8cb7',options:'red'}} placeholder='Area' onChange={handleChange} />
         </div>
-        </div>
-        <div>
-          <input type="text" placeholder='' />
         </div>
         <div>
           <Shops area = {selectedLabel}/>

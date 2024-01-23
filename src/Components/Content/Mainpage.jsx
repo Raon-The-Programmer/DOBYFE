@@ -15,8 +15,8 @@ const [visible,setvisible] = useState(false)
     <div className='main'>
       <div className='d-flex p-3 justify-content-between align-items-center'>
         <div className='d-flex'>
-          <IoLogoGoogle size={30} className='mx-2' />
-          <h3 className='text-6'><strong>Dobby</strong></h3>
+         
+          <h3 className='text-6'><strong>Dobby{'>'}</strong></h3>
         </div>
         <div>
           <RiNotification2Fill className='mx-3' size={22} onClick={()=>setvisible(!visible)} />

@@ -49,14 +49,14 @@ const Profile = () => {
       phone: number,
       address: address,
     };
-    console.log(user.address);
+    
     auth
       .updateProfile(user)
       .then((data) => {
-        console.log('User Updated: ', data);
-        // Update the local user profile state
+        
+       
         setUserProfile(data);
-        // Optionally, close the update form
+        
         setVisible(false);
       })
       .catch((err) => {
@@ -66,13 +66,13 @@ const Profile = () => {
 
   if (!userProfile) {
     // Render loading state or placeholder while fetching data
-    return <Triangle
+    return <div className='container'><Triangle
     visible={true}
     height="80"
     width="80"
     color="black"
     ariaLabel="triangle-loading"
-  />;
+  />;</div>
   }
 
   return (

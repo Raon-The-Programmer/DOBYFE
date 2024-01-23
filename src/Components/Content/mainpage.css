@@ -35,3 +35,10 @@
     border: 2px solid red;
 }
 
+.animation{
+    background-color: var(--dark-beige);
+    border-radius: 1rem;
+    width: 80%;
+    margin: 1rem 0px;
+    height: 15rem;
+}
