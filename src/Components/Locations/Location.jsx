@@ -46,6 +46,9 @@ const Location = () => {
         </div>
         </div>
         <div>
+          <input type="text" placeholder='' />
+        </div>
+        <div>
           <Shops area = {selectedLabel}/>
         </div>
         <div>

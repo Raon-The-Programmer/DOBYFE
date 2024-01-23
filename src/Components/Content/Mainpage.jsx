@@ -7,6 +7,7 @@ import {AnimatePresence, motion} from 'framer-motion'
 import Services from './Services';
 import Navbar from '../Navbar';
 import './mainpage.css'
+import Animation from './Animation';
 
 const Mainpage = () => {
 const [visible,setvisible] = useState(false)
@@ -25,7 +26,7 @@ const [visible,setvisible] = useState(false)
         <Offers />
       </div>
       <div>
-        Dobby Animation
+        <Animation/>
       </div>
       <AnimatePresence>{visible && (<motion.div style={{
           position: 'absolute',

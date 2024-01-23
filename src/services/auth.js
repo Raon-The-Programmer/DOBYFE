@@ -74,6 +74,21 @@ const forgotpassword = async({email})=>{
         console.error('Error while getting profile!', err);
         return null;
     }
+  };
+  const updateProfile = async (user)=>{
+    try{
+        const res = await protectedInstance.put('/user/profile',user)
+        if(res===201){
+            return res
+        }
+        else{
+            console.log("Error")
+        }
+    }
+    catch(err){
+        console.err("Couldn't update user: ",err)
+        return null
+    }
   }
 
 export default {
@@ -81,5 +96,6 @@ export default {
     signIn,
     forgotpassword,
     resetPassword,
-    getProfile
+    getProfile,
+    updateProfile
 }

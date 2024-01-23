@@ -8,32 +8,32 @@ const Services = () => {
           name: 'Clothing',
           id: 1,
           Content: 'Clothing Services',
-          image:'public/pictures/clothing.jpg',
+          image:'pictures/clothing.jpg',
         },
         {
        
           name: 'Leather',
           id: 2,
           Content: 'Leather Accessories',
-          image:'public/pictures/Leather.jpg',
+          image:'pictures/Leather.jpg',
         },
         {
           name: 'Linen',
           id: 3,
           Content: 'Home Linen',
-          image: 'public/pictures/HomeLinen.jpg',
+          image: 'pictures/HomeLinen.jpg',
         },
         {
           name: 'Furnishing',
           id: 4,
           Content: 'Home Furnishing',
-          image: 'public/pictures/Furniture.jpg',
+          image: 'pictures/Furniture.jpg',
         },
         {
           name: 'Service',
           id: 5,
           Content: 'Expert Service',
-          image:'public/pictures/ExpertService.jpeg',
+          image:'pictures/ExpertService.jpeg',
         },
       ];
       

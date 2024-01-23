@@ -10,60 +10,61 @@ const Offers = () => {
         controls={false}
         indicators={false}
         pause={false}
+        
       >
         <Carousel.Item>
           <img
             className="d-block w-100 offers img-fluid rounded-5 p-2"
-            src="public/pictures/offer1.png"
+            src="pictures/offer1.png"
             alt="First slide"
           />
         </Carousel.Item>
         <Carousel.Item>
           <img
             className="d-block w-100 img-fluid offers rounded-5 p-2"
-            src="public/pictures/offer2.jpeg"
+            src="pictures/offer2.jpeg"
             alt="Second slide"
           />
         </Carousel.Item>
         <Carousel.Item>
           <img
             className="d-block w-100 img-fluid offers rounded-5 p-2"
-            src="public/pictures/offer3.png"
+            src="pictures/offer3.png"
             alt="Third slide"
           />
         </Carousel.Item>
         <Carousel.Item>
           <img
             className="d-block w-100 img-fluid offers rounded-5 p-2"
-            src="public/pictures/offer4.jpg"
+            src="pictures/offer4.jpg"
             alt="Fourth slide"
           />
         </Carousel.Item>
         <Carousel.Item>
           <img
             className="d-block w-100 img-fluid offers rounded-5 p-2"
-            src="public/pictures/offer5.jpg"
+            src="pictures/offer5.jpg"
             alt="Fifth slide"
           />
         </Carousel.Item>
         <Carousel.Item>
           <img
             className="d-block w-100 img-fluid offers rounded-5 p-2"
-            src="public/pictures/offer6.png"
+            src="pictures/offer6.png"
             alt="Sixth slide"
           />
         </Carousel.Item>
         <Carousel.Item>
           <img
             className="d-block w-100 img-fluid offers rounded-5 p-2"
-            src="public/pictures/offer7.png"
+            src="pictures/offer7.png"
             alt="Seventh slide"
           />
         </Carousel.Item>
         <Carousel.Item>
           <img
             className="d-block w-100 img-fluid offers rounded-5 p-2"
-            src="public/pictures/offer8.png"
+            src="pictures/offer8.png"
             alt="Eight slide"
           />
         </Carousel.Item>
