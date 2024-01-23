@@ -67,7 +67,7 @@ const Profile = () => {
   if (!userProfile) {
     // Render loading state or placeholder while fetching data
     return <Triangle
-    visible={loading}
+    visible={true}
     height="80"
     width="80"
     color="black"
