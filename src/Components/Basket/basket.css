@@ -1,0 +1,27 @@
+/* basket.css */
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    background: var(--dark-beige);
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border-radius: 8px;
+    position: relative; 
+  }
+  
+  .item-details {
+    flex: 1;
+  }
+  
+  .remove-icon-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    color: white;
+    padding: 0px 2px 3px 4px;
+    margin: 5px;
+    background-color: black;
+    border-radius: 50%;
+  }
+  

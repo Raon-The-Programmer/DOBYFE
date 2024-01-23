@@ -36,13 +36,13 @@ const Location = () => {
   
   return (
     <div>
-        <div className='d-flex p-3 justify-content-between align-items-center'>
+        <div className='d-flex p-3 mt-3 justify-content-between align-items-center'>
         <div className='d-flex'>
          
           <h3 className='text-6'><strong>Dobby{'>'}</strong></h3>
         </div>
         <div>
-        <Select className='rounded-2 ' options={areas} style={{width:'10rem',background:'#bbab8cb7',options:'red'}} placeholder='Area' onChange={handleChange} />
+        <Select className='rounded-2 ' options={areas} style={{width:'11rem',background:'#bbab8cb7'}} placeholder='Area' onChange={handleChange} />
         </div>
         </div>
         <div>

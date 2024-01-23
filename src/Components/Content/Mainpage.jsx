@@ -51,6 +51,7 @@ const [visible,setvisible] = useState(false)
           <p className='mx-4'>You have 0 messages</p>
       </motion.div>)}</AnimatePresence>
       <div>
+        <h2 className='mx-3'>Services</h2>
         <Services />
       </div>
       <div className='container-fluid'>
