@@ -7,6 +7,7 @@ import { useDispatch } from 'react-redux';
 import auth from '../../services/auth';
 import { AnimatePresence, motion } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
+import { Triangle } from 'react-loader-spinner';
 
 const Profile = () => {
   const [visible, setVisible] = useState(false);
@@ -65,7 +66,13 @@ const Profile = () => {
 
   if (!userProfile) {
     // Render loading state or placeholder while fetching data
-    return <p>Loading...</p>;
+    return <Triangle
+    visible={loading}
+    height="80"
+    width="80"
+    color="black"
+    ariaLabel="triangle-loading"
+  />;
   }
 
   return (
