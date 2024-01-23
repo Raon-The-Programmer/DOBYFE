@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react'
+import React, { useState } from 'react'
 import { RiNotification2Fill } from "react-icons/ri";
 import { BsInfoCircleFill } from "react-icons/bs";
 import { IoLogoGoogle } from "react-icons/io";
@@ -10,7 +10,6 @@ import './mainpage.css'
 
 const Mainpage = () => {
 const [visible,setvisible] = useState(false)
-const ref = useRef()
   return (
     <div className='main'>
       <div className='d-flex p-3 justify-content-between align-items-center'>
@@ -19,7 +18,7 @@ const ref = useRef()
           <h3 className='text-6'><strong>Dobby</strong></h3>
         </div>
         <div>
-          <RiNotification2Fill ref={ref} className='mx-3' size={22} onClick={()=>setvisible(!visible)} />
+          <RiNotification2Fill className='mx-3' size={22} onClick={()=>setvisible(!visible)} />
           <BsInfoCircleFill size={22} />
         </div></div>
       <div>
