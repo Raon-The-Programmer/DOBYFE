@@ -40,7 +40,7 @@
     border-radius: 1rem;
     width: 90%;
     margin: 1rem 0px;
-    height: 15rem;
+    height: 18rem;
     overflow-x: auto;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
