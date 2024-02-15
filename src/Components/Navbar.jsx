@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { IoHome } from 'react-icons/io5';
 import { FaLocationDot } from 'react-icons/fa6';
 import { IoMdBasket } from 'react-icons/io';
@@ -9,6 +9,7 @@ import './Nav.css';
 const Navbar = () => {
   const [selectedTab, setSelectedTab] = useState('home');
   const navigate = useNavigate();
+
 
   const handleTabClick = (tab) => {
     setSelectedTab(tab);

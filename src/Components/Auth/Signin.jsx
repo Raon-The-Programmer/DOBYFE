@@ -3,6 +3,7 @@ import { Link, useNavigate } from 'react-router-dom'
 import auth from '../../services/auth'
 import './styles/signup.css'
 import { useDispatch } from 'react-redux'
+import { Triangle } from 'react-loader-spinner';
 
 const Signin = () => {
   const navigate = useNavigate()
@@ -10,20 +11,23 @@ const Signin = () => {
   const [email,setemail]= useState('')
   const [password,setpassword] = useState('')
   const [error,seterror] = useState('')
+  const [isloading,setisloading] = useState(false)
 
   const handleSubmit=async(e)=>{
     e.preventDefault()
+    setisloading(true)
     try{
       const user = {
         password,
         email
       }
       const res = await auth.signIn(user)
+      setisloading(false)
       if( await res){
         dispatch({type: 'SIGNIN_SUCCESS', payload: user})
         navigate('/explore')
       }
-      else{ seterror('Invalid email or password:(')}
+      else{ seterror('Invalid email or password')}
       setemail('')
       setpassword('')
     
@@ -46,7 +50,16 @@ const Signin = () => {
             <input className='form-control custom ' type="password" placeholder='Password' required value={password} onChange={(e)=>setpassword(e.target.value)}/>
             {error && <div className='text-danger'>{error}</div>}
             <Link to='/forgot' className='btn border-0 d-flex '>Forgot Password</Link>
-            <button className='btn mt-2 classbtn'>Login</button>
+            {isloading ? (<Triangle
+  visible={true}
+  height="40"
+  width="40"
+  color="black"
+  ariaLabel="triangle-loading"
+  wrapperStyle={{}}
+  wrapperClass=""
+  />):(<button className='btn mt-2 classbtn'>Login</button>
+  )}
         </form>
     </div>
     <div className='d-flex justify-content-center mt-2'>

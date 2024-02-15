@@ -32,15 +32,20 @@ const signIn = async(user)=>{
         return null
     }
 };
-const forgotpassword = async({email})=>{
-    try{
-     const res = await authInstance.post('/user/forgotpassword',{email})
-     console.log(res)
+const forgotpassword = async ({ email }) => {
+    try {
+        const res = await authInstance.post('/user/forgotpassword', { email });
+        console.log(res);
+        if (res.status === 200) {
+            console.log("Password reset email sent successfully");
+        } else {
+            console.log("Failed to send password reset email");
+        }
+    } catch (err) {
+        console.error("Error sending password reset email:", err);
     }
-    catch(err){
-     console.log({Error:err})
-    }
- };
+};
+
  const resetPassword = async ({ userId, token, newPassword }) => {
     try {
         const res = await authInstance.post(`user/resetpassword/${userId}/${token}`, {
