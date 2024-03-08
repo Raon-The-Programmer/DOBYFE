@@ -1,7 +1,7 @@
 import axios from "axios";
 
 //const baseurl = "http://localhost:3001"
-const baseurl = "https://doby.onrender.com"
+const baseurl = "35.170.182.146:3001"
 
 const authInstance = axios.create({
     baseURL:baseurl,
@@ -10,6 +10,8 @@ const authInstance = axios.create({
         "Content-Type":"application/json"
     }
 })
+
+
 
 const protectedInstance = axios.create({
     baseURL:baseurl,
